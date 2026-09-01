@@ -195,8 +195,8 @@ CMakeFiles/hangman.dir/clean:
 # Target rules for target CMakeFiles/hangman_tests.dir
 
 # All Build rule for target.
-CMakeFiles/hangman_tests.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
 CMakeFiles/hangman_tests.dir/all: CMakeFiles/hangman_lib.dir/all
+CMakeFiles/hangman_tests.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
 CMakeFiles/hangman_tests.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hangman_tests.dir\build.make CMakeFiles/hangman_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hangman_tests.dir\build.make CMakeFiles/hangman_tests.dir/build

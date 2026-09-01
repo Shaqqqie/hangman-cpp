@@ -25,8 +25,8 @@
 	ProcessorClockFrequency="2208.000000"
 	>
 	<Testing>
-		<StartDateTime>Sep 02 00:11 W. Europe Daylight Time</StartDateTime>
-		<StartTestTime>1788300680</StartTestTime>
+		<StartDateTime>Sep 02 00:13 W. Europe Daylight Time</StartDateTime>
+		<StartTestTime>1788300809</StartTestTime>
 		<TestList>
 			<Test>./Letter_exists_in_word</Test>
 		</TestList>
@@ -35,10 +35,10 @@
 			<Path>.</Path>
 			<FullName>./Letter_exists_in_word</FullName>
 			<FullCommandLine>D:\Projects\hangman-cpp\build\hangman_tests.exe "Letter exists in word"</FullCommandLine>
-			<StartTestTime>1788300680.512908</StartTestTime>
+			<StartTestTime>1788300809.691636</StartTestTime>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.335675</Value>
+					<Value>0.333057</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -53,12 +53,12 @@
 					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value encoding="base64" compression="gzip">eJxzy8wpSS0qtlJQ8kktAbIUUisyi0uKFTLzFMrzi1KUuIIS81Lyc/NSi4sVilNTU1JTFEryrRSMTI0tTY0MzI3MuWypC7gcc3IUSlJBbihILC4G2qdhqABiFJVk5ueB3GUIllZITixO1eTiAgDJlzgV====</Value>
+					<Value encoding="base64" compression="gzip">eJxzy8wpSS0qtlJQ8kktAbIUUisyi0uKFTLzFMrzi1KUuIIS81Lyc/NSi4sVilNTU1JTFEryrRQMLS1MjIzNjE0suWypC7gcc3IUSlJBbihILC4G2qdhqABiFJVk5ueB3GUIllZITixO1eTiAgDNOzgc====</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Sep 02 00:11 W. Europe Daylight Time</EndDateTime>
-		<EndTestTime>1788300680</EndTestTime>
+		<EndDateTime>Sep 02 00:13 W. Europe Daylight Time</EndDateTime>
+		<EndTestTime>1788300810</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
