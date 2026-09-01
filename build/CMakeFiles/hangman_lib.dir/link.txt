@@ -1,2 +1,0 @@
-C:\msys64\ucrt64\bin\ar.exe qc libhangman_lib.a CMakeFiles/hangman_lib.dir/src/hangman.cpp.obj
-C:\msys64\ucrt64\bin\ranlib.exe libhangman_lib.a

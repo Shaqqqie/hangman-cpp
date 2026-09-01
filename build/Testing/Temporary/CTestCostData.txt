@@ -1,3 +1,0 @@
-Letter does not exist in word 0 0
-Letter exists in word 3 0.111019
----
