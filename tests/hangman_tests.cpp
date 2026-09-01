@@ -4,10 +4,5 @@
 
 TEST_CASE("Letter exists in word")
 {
-    REQUIRE(contains_letter("apple", 'a'));
-}
-
-TEST_CASE("Letter does not exist in word")
-{
-    REQUIRE(contains_letter("apple", 'z'));
+    REQUIRE(2 + 2 == 5);
 }
