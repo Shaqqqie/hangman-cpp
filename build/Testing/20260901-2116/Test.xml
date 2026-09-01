@@ -25,26 +25,20 @@
 	ProcessorClockFrequency="2208.000000"
 	>
 	<Testing>
-		<StartDateTime>Sep 02 00:08 W. Europe Daylight Time</StartDateTime>
-		<StartTestTime>1788300522</StartTestTime>
+		<StartDateTime>Sep 02 00:11 W. Europe Daylight Time</StartDateTime>
+		<StartTestTime>1788300680</StartTestTime>
 		<TestList>
 			<Test>./Letter_exists_in_word</Test>
 		</TestList>
-		<Test Status="failed">
+		<Test Status="passed">
 			<Name>Letter exists in word</Name>
 			<Path>.</Path>
 			<FullName>./Letter_exists_in_word</FullName>
 			<FullCommandLine>D:\Projects\hangman-cpp\build\hangman_tests.exe "Letter exists in word"</FullCommandLine>
-			<StartTestTime>1788300522.069708</StartTestTime>
+			<StartTestTime>1788300680.512908</StartTestTime>
 			<Results>
-				<NamedMeasurement type="text/string" name="Exit Code">
-					<Value>Failed</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Exit Value">
-					<Value>42</Value>
-				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.328309</Value>
+					<Value>0.335675</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -59,12 +53,12 @@
 					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value encoding="base64" compression="gzip">eJytUsFKw0AQvc9XPHpSJIHGtNWFIGJTKPSgAW8BWZKpWUl3Q2bVHMRvdxO8KF6EPHgwzAzM483bmdZzLwqLA/tQgQcjXmAs3l1fL6jQtnYnyyIQ5ppreKeQpOvrdJMmmzXR57ygRtvnk7ZPnoOQmAeGEWjcaV81Cd4u46t4icaJh+661lTaG2djKl6DZOMbRDc4uh6uG/tCFM0L+tOo2a9sVXnfuxeuvJTfjkRV15WTK+VPj0JfrSieF/RvCRuF3e3+kG8VAUX+8Lgv8jMkuAjMMqxwTtODeOi0lfCccS+dRkTZvKBRFiotHLK9xEfgUZuWa9Ii3E/R+DWgLzMd4ZI=</Value>
+					<Value encoding="base64" compression="gzip">eJxzy8wpSS0qtlJQ8kktAbIUUisyi0uKFTLzFMrzi1KUuIIS81Lyc/NSi4sVilNTU1JTFEryrRSMTI0tTY0MzI3MuWypC7gcc3IUSlJBbihILC4G2qdhqABiFJVk5ueB3GUIllZITixO1eTiAgDJlzgV====</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Sep 02 00:08 W. Europe Daylight Time</EndDateTime>
-		<EndTestTime>1788300522</EndTestTime>
+		<EndDateTime>Sep 02 00:11 W. Europe Daylight Time</EndDateTime>
+		<EndTestTime>1788300680</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

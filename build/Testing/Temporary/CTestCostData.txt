@@ -1,4 +1,3 @@
 Letter does not exist in word 0 0
-Letter exists in word 1 0
+Letter exists in word 2 0.167838
 ---
-Letter exists in word

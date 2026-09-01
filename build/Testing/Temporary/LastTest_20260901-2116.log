@@ -1,40 +1,23 @@
-Start testing: Sep 02 00:08 W. Europe Daylight Time
+Start testing: Sep 02 00:11 W. Europe Daylight Time
 ----------------------------------------------------------
 1/1 Testing: Letter exists in word
 1/1 Test: Letter exists in word
 Command: "D:/Projects/hangman-cpp/build/hangman_tests.exe" "Letter exists in word"
 Directory: D:/Projects/hangman-cpp/build
-"Letter exists in word" start time: Sep 02 00:08 W. Europe Daylight Time
+"Letter exists in word" start time: Sep 02 00:11 W. Europe Daylight Time
 Output:
 ----------------------------------------------------------
 Filters: "Letter exists in word"
-Randomness seeded to: 2469474276
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-hangman_tests.exe is a Catch2 v3.8.1 host application.
-Run with -? for options
-
--------------------------------------------------------------------------------
-Letter exists in word
--------------------------------------------------------------------------------
-D:\Projects\hangman-cpp\tests\hangman_tests.cpp:5
-...............................................................................
-
-D:\Projects\hangman-cpp\tests\hangman_tests.cpp:7: FAILED:
-  REQUIRE( 2 + 2 == 5 )
-with expansion:
-  4 == 5
-
+Randomness seeded to: 2539520727
 ===============================================================================
-test cases: 1 | 1 failed
-assertions: 1 | 1 failed
+All tests passed (1 assertion in 1 test case)
 
 <end of output>
-Test time =   0.33 sec
+Test time =   0.34 sec
 ----------------------------------------------------------
-Test Failed.
-"Letter exists in word" end time: Sep 02 00:08 W. Europe Daylight Time
+Test Passed.
+"Letter exists in word" end time: Sep 02 00:11 W. Europe Daylight Time
 "Letter exists in word" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Sep 02 00:08 W. Europe Daylight Time
+End testing: Sep 02 00:11 W. Europe Daylight Time
