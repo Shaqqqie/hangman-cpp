@@ -1,0 +1,5 @@
+if(EXISTS "D:/Projects/hangman-cpp/build/cpp_template_tests-b12d07c_tests.cmake")
+  include("D:/Projects/hangman-cpp/build/cpp_template_tests-b12d07c_tests.cmake")
+else()
+  add_test(cpp_template_tests_NOT_BUILT-b12d07c cpp_template_tests_NOT_BUILT-b12d07c)
+endif()

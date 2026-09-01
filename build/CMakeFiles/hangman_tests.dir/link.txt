@@ -1,0 +1,3 @@
+C:\msys64\ucrt64\bin\cmake.exe -E rm -f CMakeFiles\hangman_tests.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\hangman_tests.dir/objects.a @CMakeFiles\hangman_tests.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\hangman_tests.dir/objects.a -Wl,--no-whole-archive -o hangman_tests.exe -Wl,--out-implib,libhangman_tests.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\hangman_tests.dir\linkLibs.rsp

@@ -1,0 +1,23 @@
+Start testing: Sep 01 23:38 W. Europe Daylight Time
+----------------------------------------------------------
+1/2 Testing: Letter exists in word
+1/2 Test: Letter exists in word
+Command: "D:/Projects/hangman-cpp/build/hangman_tests.exe" "Letter exists in word"
+Directory: D:/Projects/hangman-cpp/build
+"Letter exists in word" start time: Sep 01 23:38 W. Europe Daylight Time
+Output:
+----------------------------------------------------------
+Filters: "Letter exists in word"
+Randomness seeded to: 4029748149
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.35 sec
+----------------------------------------------------------
+Test Passed.
+"Letter exists in word" end time: Sep 01 23:38 W. Europe Daylight Time
+"Letter exists in word" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 01 23:38 W. Europe Daylight Time

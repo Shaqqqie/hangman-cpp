@@ -1,0 +1,14 @@
+D:/Projects/hangman-cpp/build/CMakeFiles/hangman_lib.dir
+D:/Projects/hangman-cpp/build/CMakeFiles/hangman.dir
+D:/Projects/hangman-cpp/build/CMakeFiles/hangman_tests.dir
+D:/Projects/hangman-cpp/build/CMakeFiles/test.dir
+D:/Projects/hangman-cpp/build/CMakeFiles/edit_cache.dir
+D:/Projects/hangman-cpp/build/CMakeFiles/rebuild_cache.dir
+D:/Projects/hangman-cpp/build/_deps/catch2-build/CMakeFiles/test.dir
+D:/Projects/hangman-cpp/build/_deps/catch2-build/CMakeFiles/edit_cache.dir
+D:/Projects/hangman-cpp/build/_deps/catch2-build/CMakeFiles/rebuild_cache.dir
+D:/Projects/hangman-cpp/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir
+D:/Projects/hangman-cpp/build/_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir
+D:/Projects/hangman-cpp/build/_deps/catch2-build/src/CMakeFiles/test.dir
+D:/Projects/hangman-cpp/build/_deps/catch2-build/src/CMakeFiles/edit_cache.dir
+D:/Projects/hangman-cpp/build/_deps/catch2-build/src/CMakeFiles/rebuild_cache.dir
