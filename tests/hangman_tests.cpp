@@ -4,5 +4,5 @@
 
 TEST_CASE("Letter exists in word")
 {
-    REQUIRE(2 + 2 == 4);
+    REQUIRE(2 + 2 == 5);
 }
