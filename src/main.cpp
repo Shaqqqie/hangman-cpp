@@ -2,10 +2,7 @@
 #include "hangman.hpp"
 
 int main(){
-    std::string word{"apple"};
+    std::vector<std::string> words = import_words("data/words.txt");
 
-    if(contains_letter(word, 'a')){
-        std::cout << "Correct guess!\n";
-    }
     return 0;
 }

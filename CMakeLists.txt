@@ -16,6 +16,8 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(Catch2)
 
+find_program(CLANG_TIDY_EXE NAMES clang-tidy)
+
 add_library(hangman_lib
     src/hangman.cpp
 )
@@ -36,8 +38,6 @@ target_link_libraries(
     hangman_lib
 )
 
-enable_testing()
-
 add_executable(hangman_tests
     tests/hangman_tests.cpp
 )
@@ -49,8 +49,46 @@ target_link_libraries(
     Catch2::Catch2WithMain
 )
 
-list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/extras)
+target_compile_options(
+    hangman_lib
+    PRIVATE
+    -Wall
+    -Wextra
+    -Wpedantic
+)
 
+target_compile_options(
+    hangman
+    PRIVATE
+    -Wall
+    -Wextra
+    -Wpedantic
+)
+
+target_compile_options(
+    hangman_tests
+    PRIVATE
+    -Wall
+    -Wextra
+    -Wpedantic
+)
+
+if(CLANG_TIDY_EXE)
+    set_target_properties(
+        hangman_lib
+        hangman
+        hangman_tests
+        PROPERTIES
+        CXX_CLANG_TIDY "${CLANG_TIDY_EXE}"
+    )
+endif()
+
+enable_testing()
+
+list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/extras)
 include(Catch)
 
-catch_discover_tests(hangman_tests)
+catch_discover_tests(
+    hangman_tests
+    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+)
