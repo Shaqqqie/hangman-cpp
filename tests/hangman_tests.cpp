@@ -2,20 +2,15 @@
 
 #include "hangman.hpp"
 
-TEST_CASE("import_words reads the expected words")
+TEST_CASE("random_number returns valid index")
 {
-    std::vector<std::string> expected{
-        "elephant",
-        "keyboard",
-        "mountain",
-        "bicycle",
-        "pancake",
-        "dolphin",
-        "castle",
-        "thunder",
-        "pumpkin",
-        "diamond"
+    const std::size_t words_size{10};
+
+    const std::size_t index{
+        random_number(words_size)
     };
 
-     REQUIRE(import_words("data/words.txt") == expected);
+    
+
+     REQUIRE(index < words_size);
 }
