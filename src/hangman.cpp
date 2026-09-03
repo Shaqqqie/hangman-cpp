@@ -21,7 +21,7 @@ std::vector<std::string> import_words(const std::string &filename){
     return words;
 }
 
-std::string choose_word(std::vector<std::string> &words, int random_index){
+std::string choose_word(std::vector<std::string> &words, std::size_t random_index){
     std::string word = words.at(random_index);
     
     return word;
@@ -51,5 +51,8 @@ bool contains_letter(const std::string &word, char guess){
     return false;
 }
 
-
-
+void display_hidden_word(const std::string word){
+    for(auto letter: word){
+        std::cout << "_" << " ";
+    }
+}

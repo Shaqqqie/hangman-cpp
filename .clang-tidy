@@ -2,4 +2,6 @@ Checks: >
   bugprone-*,
   performance-*,
   modernize-*,
-  readability-*
+  readability-*,
+  -modernize-use-trailing-return-type,
+  -readability-use-anyofallof
