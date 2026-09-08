@@ -10,6 +10,16 @@
                 "CMAKE_BUILD_TYPE": "Debug",
                 "CMAKE_CXX_COMPILER": "C:/msys64/ucrt64/bin/g++.exe"
             }
+        },
+        {
+            "name": "ucrt64-ninja-debug",
+            "displayName": "MSYS2 UCRT64 Ninja Debug",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build-ninja",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_CXX_COMPILER": "C:/msys64/ucrt64/bin/g++.exe"
+            }
         }
     ]
 }

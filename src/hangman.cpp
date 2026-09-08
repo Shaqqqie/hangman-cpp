@@ -5,7 +5,7 @@
 #include <random>
 #include <stdexcept>
 
-std::vector<std::string> import_words(const std::string &filename){
+std::vector<std::string> Hangman::import_words(const std::string &filename){
     std::ifstream file{filename};
 
     if(!file){
@@ -13,7 +13,6 @@ std::vector<std::string> import_words(const std::string &filename){
         return {};
     }
 
-    std::vector<std::string> words{};
     std::string line{};
     while(std::getline(file, line)){
         words.push_back(line);
@@ -21,13 +20,11 @@ std::vector<std::string> import_words(const std::string &filename){
     return words;
 }
 
-std::string choose_word(std::vector<std::string> &words, std::size_t random_index){
-    std::string word = words.at(random_index);
-    
-    return word;
+std::string Hangman::choose_word( std::size_t random_index){
+    return word = words.at(random_index);
 }
 
-std::size_t random_number(std::size_t words_size){
+std::size_t Hangman::random_number(std::size_t words_size){
     if(words_size == 0){
         throw std::invalid_argument{"words_size cannot be 0"};
     }
@@ -42,17 +39,47 @@ std::size_t random_number(std::size_t words_size){
     return distribution(generator);
 }
 
-bool contains_letter(const std::string &word, char guess){
+bool Hangman::contains_letter(char guess){
     for(char letter: word){
         if(letter == guess){
             return true;
         }
     }
+    number_of_guesses--;
     return false;
 }
 
-void display_hidden_word(const std::string word){
+void Hangman::display_hidden_word(){
     for(auto letter: word){
-        std::cout << "_" << " ";
+        hidden_word.append("_");
+    }
+
+    std::cout << "Hidden word: ";
+    for(auto letter: hidden_word){
+        std::cout << letter << " ";
+    }
+    std::cout << "\n";
+}
+
+std::string Hangman::get_hidden_word(){
+    return hidden_word;
+}
+
+void Hangman::display_guessed_letters(){
+    for(auto letter: guessed_letters){
+        std::cout << letter << " ";
+    }
+    std::cout << "\n";
+}
+
+void Hangman::play_game(){
+    import_words("data/words.txt");
+    choose_word(random_number(words.size()));
+
+    while(true){
+        display_hidden_word();
+        std::cout << "Guessed letters: ";
+        display_guessed_letters();
+        std::cout << "Number of guesses: " << number_of_guesses << std::endl;
     }
 }
