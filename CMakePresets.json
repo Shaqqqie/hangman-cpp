@@ -5,13 +5,14 @@
             "name": "ucrt64-debug",
             "displayName": "MSYS2 UCRT64 Debug",
             "generator": "MinGW Makefiles",
-            "binaryDir": "${sourceDir}/build",
+            "binaryDir": "${sourceDir}/build/windows-debug",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Debug",
                 "CMAKE_CXX_COMPILER": "C:/msys64/ucrt64/bin/g++.exe"
             }
         },
         {
+<<<<<<< HEAD
             "name": "ucrt64-ninja-debug",
             "displayName": "MSYS2 UCRT64 Ninja Debug",
             "generator": "Ninja",
@@ -19,6 +20,15 @@
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Debug",
                 "CMAKE_CXX_COMPILER": "C:/msys64/ucrt64/bin/g++.exe"
+=======
+            "name": "linux-debug",
+            "displayName": "Linux Debug",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/linux-debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_CXX_COMPILER": "/usr/bin/g++"
+>>>>>>> 377947f (Add WSL/Ubuntu CMakePreset)
             }
         }
     ]
