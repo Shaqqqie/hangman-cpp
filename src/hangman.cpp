@@ -45,15 +45,10 @@ bool Hangman::contains_letter(char guess){
             return true;
         }
     }
-    number_of_guesses--;
     return false;
 }
 
 void Hangman::display_hidden_word(){
-    for(auto letter: word){
-        hidden_word.append("_");
-    }
-
     std::cout << "Hidden word: ";
     for(auto letter: hidden_word){
         std::cout << letter << " ";
@@ -61,6 +56,11 @@ void Hangman::display_hidden_word(){
     std::cout << "\n";
 }
 
+void Hangman::set_hidden_word(){
+    for(auto letter: word){
+        hidden_word.append("_");
+    }
+}
 std::string Hangman::get_hidden_word(){
     return hidden_word;
 }
@@ -72,14 +72,41 @@ void Hangman::display_guessed_letters(){
     std::cout << "\n";
 }
 
+char Hangman::guess(){
+    char guess{};
+    std::cout << "Letter: ";
+    std::cin >> guess;
+    return guess;
+}
+
 void Hangman::play_game(){
     import_words("data/words.txt");
     choose_word(random_number(words.size()));
+    set_hidden_word();
 
     while(true){
+        
         display_hidden_word();
         std::cout << "Guessed letters: ";
         display_guessed_letters();
-        std::cout << "Number of guesses: " << number_of_guesses << std::endl;
+        std::cout << "Number of guesses: " << number_of_guesses << "\n";
+
+        auto letter = guess();
+        if (contains_letter(letter)) {
+            reveal_letter(letter);
+        }
+        else{
+            number_of_guesses--;
+        }
     }
+}
+
+void Hangman::reveal_letter(char letter) { 
+    unsigned int index{};
+    for (std::size_t i{}; i < word.size(); ++i){
+        if(letter == word[i]){
+            index = i;
+        }
+    }
+    hidden_word[index] = letter;
 }

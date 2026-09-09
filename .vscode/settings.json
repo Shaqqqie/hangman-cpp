@@ -1,13 +1,22 @@
 {
-    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500,
     
-    "cmake.useCMakePresets": "always",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
 
-    "cmake.environment": {
-        "PATH": "C:/msys64/ucrt64/bin;${env:PATH}"
+    "cmake.useCMakePresets": "always",
+    "cmake.sourceDirectory": "${workspaceFolder}",
+
+    "cmake.debugConfig": {
+        "cwd": "${workspaceFolder}"
     },
 
-    "C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
-    "C_Cpp.default.intelliSenseMode": "windows-gcc-x64"
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+    "C_Cpp.clang_format_style": "file",
 
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true
+    }
 }

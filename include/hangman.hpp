@@ -22,13 +22,14 @@ public:
     std::vector<std::string> import_words(const std::string &filename);
     std::string choose_word( std::size_t random_index);
     static std::size_t random_number(std::size_t words_size);
+    void set_hidden_word();
     void display_hidden_word();
     bool contains_letter(char guess);
     std::string get_hidden_word();
     void display_guessed_letters();
     void play_game();
+    char guess();
+    void reveal_letter(char);
 };
-
-
 
 #endif
