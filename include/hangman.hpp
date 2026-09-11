@@ -24,8 +24,9 @@ public:
     static std::size_t random_number(std::size_t words_size);
     void set_hidden_word();
     void display_hidden_word();
-    bool contains_letter(char guess);
+    bool contains_letter(char);
     std::string get_hidden_word();
+    void add_guessed_letter(char);
     void display_guessed_letters();
     void play_game();
     char guess();

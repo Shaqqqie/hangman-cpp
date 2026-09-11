@@ -49,7 +49,7 @@ bool Hangman::contains_letter(char guess){
 }
 
 void Hangman::display_hidden_word(){
-    std::cout << "Hidden word: ";
+    std::cout << "\nHidden word: ";
     for(auto letter: hidden_word){
         std::cout << letter << " ";
     }
@@ -66,7 +66,8 @@ std::string Hangman::get_hidden_word(){
 }
 
 void Hangman::display_guessed_letters(){
-    for(auto letter: guessed_letters){
+    std::cout << "Guessed letters: ";
+    for (auto letter : guessed_letters){
         std::cout << letter << " ";
     }
     std::cout << "\n";
@@ -87,26 +88,39 @@ void Hangman::play_game(){
     while(true){
         
         display_hidden_word();
-        std::cout << "Guessed letters: ";
         display_guessed_letters();
         std::cout << "Number of guesses: " << number_of_guesses << "\n";
 
         auto letter = guess();
-        if (contains_letter(letter)) {
+        add_guessed_letter(letter);
+        if (contains_letter(letter))
+        {
             reveal_letter(letter);
         }
         else{
             number_of_guesses--;
         }
+
+        if(number_of_guesses == 0){
+            std::cout << "Game over!\n";
+            break;
+        }
+        else if(hidden_word == word){
+            std::cout << "Game Won!\n";
+            break;
+        }
     }
 }
 
 void Hangman::reveal_letter(char letter) { 
-    unsigned int index{};
     for (std::size_t i{}; i < word.size(); ++i){
         if(letter == word[i]){
-            index = i;
+            hidden_word[i] = letter;
         }
     }
-    hidden_word[index] = letter;
+     
+}
+
+void Hangman::add_guessed_letter(char letter){
+    guessed_letters.push_back(letter);
 }
