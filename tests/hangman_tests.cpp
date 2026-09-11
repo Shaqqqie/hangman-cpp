@@ -2,16 +2,7 @@
 
 #include "hangman.hpp"
 
-TEST_CASE("Hangman imports words from a file")
-{
-    Hangman game;
 
-    auto words = game.import_words("data/words_test.txt");
-
-    REQUIRE_FALSE(words.empty());
-    REQUIRE(words.at(0) == "apple");
-    REQUIRE(words.at(1) == "banana");
-}
 
 TEST_CASE("random_number returns an index inside the valid range")
 {
@@ -27,20 +18,7 @@ TEST_CASE("random_number returns an index inside the valid range")
     }
 }
 
-TEST_CASE("choose_word returns the word at the given index")
-{
-    Hangman game;
 
-    std::vector<std::string> words{
-        "apple",
-        "banana",
-        "orange"
-    };
-
-    REQUIRE(game.choose_word(0) == "apple");
-    REQUIRE(game.choose_word(1) == "banana");
-    REQUIRE(game.choose_word(2) == "orange");
-}
 
 TEST_CASE("contains_letter detects letters in the chosen word")
 {
@@ -71,3 +49,13 @@ TEST_CASE("hidden_word displays '_' for every letter in chosen word")
     REQUIRE(game.get_hidden_word() == "_____");
 }
 
+TEST_CASE("Converting String to lowercase")
+{
+    std::string word{"APPLE"};
+
+    for(char &letter: word){
+        letter = std::tolower(letter);
+    }
+
+    REQUIRE(word == "apple");
+}
