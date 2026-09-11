@@ -74,8 +74,8 @@ void Hangman::display_guessed_letters(){
 }
 
 char Hangman::guess(){
-    char guess{};
-    std::cout << "Letter: ";
+    std::string guess{};
+    std::cout << "Guess: ";
     std::cin >> guess;
     return guess;
 }
